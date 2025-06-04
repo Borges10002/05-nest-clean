@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  database:
+    image: postgres
+    container_name: nest-clean-pg
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=postgres
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=nest-clean
+      - PGDATA:/data/postgres
+
+    volumes:
+      - pgdata:/data/postgres
+
+volumes:
+  pgdata:
+    driver: local

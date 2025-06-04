@@ -1,0 +1,23 @@
+
+#create my docker composer
+- docker run --name nest-clean-pg -e POSTGRESQL_USERNAME=postgres -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=nest-clean -p 5432:5432 bitnami/postgresql
+ criar a img docker
+- docker build -t rentx .
+
+verificar se existe uma img
+- docker ps
+
+roda o projeto em docker
+- docker run -p 3333:3333 rentx
+
+listar o de container docker
+- docker ps
+- docker ps -a
+- docker start a4d09321d78a
+- docker stop a4d09321d78a
+- docker rm a4d09321d78a --deletar
+
+- docker composer stop
+- docker composer up -d
+- docker composer up 
+
