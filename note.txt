@@ -24,5 +24,6 @@ listar o de container docker
 - docker composer up -d
 - docker composer up 
 
-
+#configurar variavel de ambiente
+ - npm i @nestjs/config
 
