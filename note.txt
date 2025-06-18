@@ -27,3 +27,9 @@ listar o de container docker
 #configurar variavel de ambiente
  - npm i @nestjs/config
 
+gerar arquivo private and public
+openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
+base64 -i private_key.pem
+base64 private_key.pem > private_key-base64.txt
+base64 private_key.pem > private_key-base64.txt
+
