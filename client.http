@@ -29,3 +29,8 @@ Content-Type: application/json
 POST {{baseUrl}}/questions
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
+
+{
+    "title": "Como criar uma API com NestJS?",
+    "content": "Estou aprendendo NestJS e gostaria de saber como criar uma API simples."
+}
