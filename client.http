@@ -34,3 +34,13 @@ Authorization: Bearer {{authToken}}
     "title": "Como criar uma API com NestJS?",
     "content": "Estou aprendendo NestJS e gostaria de saber como criar uma API simples."
 }
+
+
+###
+
+
+# @name fetch_recent_questions
+GET {{baseUrl}}/questions?page=2
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
