@@ -33,3 +33,7 @@ base64 -i private_key.pem
 base64 private_key.pem > private_key-base64.txt
 base64 private_key.pem > private_key-base64.txt
 
+
+vitest -> for test 
+  npm i --save-dev vitest unplugin-swc @swc/core @vitest/coverage-v8
+  npm i vite-tsconfig-paths -D
